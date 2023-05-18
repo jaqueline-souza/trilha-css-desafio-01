@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap");
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(49, 168, 221, 0) 100%
+  );
+
+  background-color: #121214;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("background-header.png");
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.banner-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.banner-content img {
+  height: 30%;
+}
+
+.banner-content h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(180deg, #33a8db 0%, #1472b7 100%);
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5em;
+  font-weight: 900;
+}
+
+.banner-content p {
+  font-size: 1.25em;
+  margin: 30px;
+  color: #ffffff;
+}
+
+.banner-content h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(180deg, #33a8db 0%, #1472b7 100%);
+  -webkit-text-fill-color: transparent;
+  border: 4px solid #33a8db;
+  padding: 16px;
+  border-radius: 50px;
+}
+.banner-content h2 a {
+  font-weight: 900;
+  font-size: 1em;
+  border-image: linear-gradient(180deg, #33a8db 0%, #1472b7 100%) 30;
+  padding: 19px;
+}
+
+hr {
+  width: 100%;
+  color: inherit;
+  margin: 50px 0;
+  border-image: linear-gradient(180deg, #33a8db 0%, #1472b7 100%) 30;
+}
+
+/* Modules */
+
+.course-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 325px;
+}
+.course-content h2 {
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(180deg, #33a8db 0%, #1472b7 100%);
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.course-content p {
+  text-align: center;
+  margin-top: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.course-content ul {
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+.course-content span {
+  padding-right: 5px;
+  font-weight: 400;
+  font-size: 1em;
+  color: #33a8db;
+}
+.course-content ul li + li {
+  margin-top: 30px;
+}
+
+.course-content ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+  background: #252525;
+  border: 1px solid #33a8db;
+  box-shadow: inset -2px 6px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 57px;
+}
+
+/* Woman Background */
+
+.woman-background {
+  display: flex;
+  flex-wrap: wrap;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #33a8db;
+  margin-top: 50px;
+  background-image: url("woman.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  max-width: 100vw;
+}
+
+.woman-background h2 {
+  margin: 70px 20%;
+  font-weight: 900;
+  font-size: 2.5em;
+  color: #ffffff;
+  text-shadow: 3px 2px 0px #33a8db;
+  text-align:left , 2px;
+}
+
+.students-dio {
+  border-bottom: 1px solid #33a8db;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.students-dio h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  color: #33a8db;
+}
+
+.students-dio img {
+  max-width: 100%;
+  margin-top: 50px;
+}
+
+.students-dio .students-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.students-dio p {
+  max-width: 960px;
+  font-weight: 400;
+  font-size: 1.5em;
+  text-align: center;
+  color: #ffffff;
+  margin: 60px 0;
+}
+
+footer {
+  margin-top: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer img {
+  max-width: 80%;
+}
+
+footer p {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 10px 0 40px;
+}
+
+footer a {
+  padding-right: 5px;
+  text-decoration: none;
+  color: #33a8db;
+}
+
+@media (max-width: 900px) {
+  .students-text {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 427px) {
+  .woman-background {
+    display: none;
+  }
+  hr {
+    margin: 100px 0;
+  }
+}
+
+@media (max-width: 395px) {
+  .course-content h2 {
+    font-size: 1.7rem;
+  }
+
+  .students-dio h2 {
+    font-size: 1.7rem;
+  }
+
+  .students-text {
+    font-size: 0.9rem;
+  }
+}
